@@ -2,6 +2,7 @@
     font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
+    /*border: 1px solid red;*/
 }
 body{
     margin: 0;
@@ -47,9 +48,12 @@ body{
 .center-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
+
+
 
 .navbar {
     width: 100%;
@@ -103,7 +107,22 @@ body{
     text-align: center;
 }
 
+
 .content-container, .bottom-buttons{
+    margin-top: 25px;
+
+}
+.button-stack{
+
     margin-top: 25px;
 }
 
+.block{
+    display: block;
+}
+#technobel-school{
+    opacity: 50%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}

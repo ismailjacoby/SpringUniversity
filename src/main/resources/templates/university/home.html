@@ -9,21 +9,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-logo">
-            <img src="/assets/image/TBUW.png" alt="navigation bar Logo">
+    <div class="parent-container">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="/assets/image/TBUW.png" alt="navigation bar Logo">
+            </div>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="/home">Home</a></li>
+                <li class="nav-link"><a href="/students/all">Students</a></li>
+                <li class="nav-link"><a href="/professors/all">Professors</a></li>
+                <li class="nav-link"><a href="/courses/all">Courses</a></li>
+                <li class="nav-link"><a href="/sections/all">Sections</a></li>
+            </ul>
+            <div class="navbar-logout">
+                <a class="red-button padding-twenty" href="/">Logout</a>
+            </div>
         </div>
-        <ul class="nav-links">
-            <li class="nav-link"><a href="/home">Home</a></li>
-            <li class="nav-link"><a href="/students/all">Students</a></li>
-            <li class="nav-link"><a href="/professors/all">Professors</a></li>
-            <li class="nav-link"><a href="/courses/all">Courses</a></li>
-            <li class="nav-link"><a href="/sections/all">Sections</a></li>
-        </ul>
-        <div class="navbar-logout">
-            <a class="red-button padding-twenty" href="/">Logout</a>
+        <div class="content-container-container">
+            <img src="/assets/image/technobel.png" id="technobel-school">
+            <h2>Explore Technobel University:</h2><br>
+            <a class="red-button padding-ten button-stack" href="/students/all">Student</a>
+            <a class="red-button padding-ten button-stack" href="/professors/all">Professors</a>
+            <a class="red-button padding-ten button-stack" href="/courses/all">Courses</a>
+            <a class="red-button padding-ten button-stack" href="/sections/all">Sections</a>
         </div>
     </div>
-
 </body>
 </html>

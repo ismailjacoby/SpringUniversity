@@ -28,20 +28,23 @@
 
     <div class="content-container">
         <h1>Course List</h1>
-        <table>
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="course : ${courses}">
-                <td th:text="${course.id}"></td>
-                <td th:text="${course.name}"></td>
-            </tr>
-            </tbody>
-        </table>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="course : ${courses}">
+                    <td th:text="${course.id}"></td>
+                    <td th:text="${course.name}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
 
         <div class="bottom-buttons">
             <a class="red-button padding-ten">Add Course</a>
