@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface ProfessorService {
     void createProfessor(ProfessorForm professorForm);
     Optional<Professor> getOneProfessor(Long id);
-    List<Professor> getAllProfessors(Long id);
+    List<Professor> getAllProfessors();
     void updateProfessor(Long id, ProfessorForm professorForm);
     void deleteProfessor(Long id);
 

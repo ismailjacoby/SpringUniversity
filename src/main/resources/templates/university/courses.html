@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technobel University - Courses</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="parent-container">
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="/assets/image/TBUW.png" alt="navigation bar Logo">
+        </div>
+        <ul class="nav-links">
+            <li class="nav-link"><a href="/home">Home</a></li>
+            <li class="nav-link"><a href="/students/all">Students</a></li>
+            <li class="nav-link"><a href="/professors/all">Professors</a></li>
+            <li class="nav-link"><a href="/courses/all">Courses</a></li>
+            <li class="nav-link"><a href="/sections/all">Sections</a></li>
+        </ul>
+        <div class="navbar-logout">
+            <a class="red-button padding-twenty" href="/">Logout</a>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <h1>Course List</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="course : ${courses}">
+                <td th:text="${course.id}"></td>
+                <td th:text="${course.name}"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="bottom-buttons">
+            <a class="red-button padding-ten">Add Course</a>
+            <a class="red-button padding-ten">Delete Course</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

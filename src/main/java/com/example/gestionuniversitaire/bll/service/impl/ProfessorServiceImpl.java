@@ -37,7 +37,7 @@ public class ProfessorServiceImpl implements ProfessorService {
     }
 
     @Override
-    public List<Professor> getAllProfessors(Long id) {
+    public List<Professor> getAllProfessors() {
         return professorRepository.findAll();
     }
 

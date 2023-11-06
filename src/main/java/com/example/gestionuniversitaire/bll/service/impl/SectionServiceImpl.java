@@ -25,6 +25,8 @@ public class SectionServiceImpl implements SectionService {
         }
         Section section = new Section();
         section.setName(sectionForm.getName());
+
+        sectionRepository.save(section);
     }
 
     @Override

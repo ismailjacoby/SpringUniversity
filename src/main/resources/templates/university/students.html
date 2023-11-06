@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technobel University - Students</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="parent-container">
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="/assets/image/TBUW.png" alt="navigation bar Logo">
+        </div>
+        <ul class="nav-links">
+            <li class="nav-link"><a href="/home">Home</a></li>
+            <li class="nav-link"><a href="/students/all">Students</a></li>
+            <li class="nav-link"><a href="/professors/all">Professors</a></li>
+            <li class="nav-link"><a href="/courses/all">Courses</a></li>
+            <li class="nav-link"><a href="/sections/all">Sections</a></li>
+        </ul>
+        <div class="navbar-logout">
+            <a class="red-button padding-twenty" href="/">Logout</a>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <h1>Student List</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Birth Date</th>
+                <th>Login</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="student : ${students}">
+                <td th:text="${student.id}"></td>
+                <td th:text="${student.firstName}"></td>
+                <td th:text="${student.lastName}"></td>
+                <td th:text="${student.birthDate}"></td>
+                <td th:text="${student.login}"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="bottom-buttons">
+            <a class="red-button padding-ten">Add Student</a>
+            <a class="red-button padding-ten">Delete Student</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
